@@ -3822,7 +3822,7 @@ void primou_add_usb_devices(void)
 	platform_device_register(&msm_device_gadget_peripheral);
 	platform_device_register(&android_usb_device);
 
-        msm_device_hsusb_host.dev.parent = &msm_device_otg.dev;
+    msm_device_hsusb_host.dev.parent = &msm_device_otg.dev;
 	platform_device_register(&msm_device_hsusb_host);
 }
 
